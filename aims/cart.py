@@ -29,6 +29,7 @@ class Cart:
         return float(sum((dvd.cost for dvd in self.items), start=0))
 
     def total_cost_with_discount(self, percent: float) -> float:
+        """Return the remaining total for a percentage, including fractional values."""
         if not isinstance(percent, (int, float)) or not 0 <= percent <= 100:
             raise ValueError("percent must be between 0 and 100")
         total = sum((dvd.cost for dvd in self.items), start=0)
