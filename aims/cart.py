@@ -47,8 +47,9 @@ class Cart:
             output = "The cart is empty"
         else:
             lines = ["***********************CART***********************"]
-            lines.extend(f"{index}. {dvd.title} - {dvd.cost:.2f} $"
-                         for index, dvd in enumerate(self.items, start=1))
+            lines.extend(
+            f"{index}. {dvd.title} - {dvd.category} - {dvd.cost:.2f} $"
+            for index, dvd in enumerate(self.items, start=1))
             lines.append(f"Total cost: {self.total_cost():.2f} $")
             lines.append("***************************************************")
             output = "\n".join(lines)
