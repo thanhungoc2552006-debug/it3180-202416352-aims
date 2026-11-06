@@ -10,6 +10,12 @@ class SearchTests(unittest.TestCase):
     def test_case_and_padding(self):
         self.assertEqual(search_by_title(self.items, '  LION  '), [self.items[0]])
 
+    def test_canonical_unicode_equivalence(self):
+        composed = DigitalVideoDisc('Caf\u00e9 Society')
+        decomposed = DigitalVideoDisc('Cafe\u0301 Society')
+        self.assertEqual(search_by_title([composed], 'CAFE\u0301'), [composed])
+        self.assertEqual(search_by_title([decomposed], 'Caf\u00e9'), [decomposed])
+
     def test_blank_keyword(self):
         self.assertEqual(search_by_title(self.items, ''), [])
         self.assertEqual(search_by_title(self.items, '   '), [])
