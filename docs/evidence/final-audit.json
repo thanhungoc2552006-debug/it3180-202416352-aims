@@ -1,0 +1,429 @@
+{
+  "audit": {
+    "versions": {
+      "v0.1.0": {
+        "version": "0.1.0",
+        "lion": 1,
+        "unicode": 0,
+        "reverse_sort": false,
+        "commit": "00c8658fb24d3137dfdac4fc21b9621a5a366af4",
+        "tag_type": "tag",
+        "tests": null,
+        "demo_output": "AIMS-mini v0.1.0\nTotal cost: 63.89 $\nSearch 'lion': The Lion King\n"
+      },
+      "v0.2.0": {
+        "version": "0.1.0",
+        "lion": 1,
+        "unicode": 0,
+        "reverse_sort": false,
+        "commit": "8b228f44a9f348f6fb7feebdc430c52f7e785531",
+        "tag_type": "tag",
+        "tests": null,
+        "demo_output": "AIMS-mini v0.1.0\n***********************CART***********************\n1. The Lion King - Animation - 19.95 $\n2. Star Wars - Science Fiction - 24.95 $\n3. Aladdin - Animation - 18.99 $\nTotal cost: 63.89 $\n***************************************************\nSearch 'lion': The Lion King\n"
+      },
+      "v0.3.0": {
+        "version": "0.1.0",
+        "lion": 1,
+        "unicode": 0,
+        "reverse_sort": false,
+        "commit": "c1a0a2c50523cbfa9b600ea2dd9af8fa78d6431e",
+        "tag_type": "tag",
+        "tests": 12,
+        "test_output": "test_add_dvd_until_full (test_cart.CartTests.test_add_dvd_until_full) ... ok\ntest_empty_cart_output (test_cart.CartTests.test_empty_cart_output) ... ok\ntest_reject_non_dvd (test_cart.CartTests.test_reject_non_dvd) ... ok\ntest_total_and_remove (test_cart.CartTests.test_total_and_remove) ... ok\ntest_boundary_discounts (test_discount.DiscountTests.test_boundary_discounts) ... ok\ntest_fractional_discount (test_discount.DiscountTests.test_fractional_discount) ... ok\ntest_integer_discount (test_discount.DiscountTests.test_integer_discount) ... ok\ntest_invalid_discounts (test_discount.DiscountTests.test_invalid_discounts) ... ok\ntest_blank_keyword (test_search.SearchTests.test_blank_keyword) ... ok\ntest_case_and_padding (test_search.SearchTests.test_case_and_padding) ... ok\ntest_empty_and_missing_results (test_search.SearchTests.test_empty_and_missing_results) ... ok\ntest_input_not_modified (test_search.SearchTests.test_input_not_modified) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.001s\n\nOK\n",
+        "demo_output": "Đã thêm đĩa vào giỏ hàng\nĐã thêm đĩa vào giỏ hàng\nĐã thêm đĩa vào giỏ hàng\nAIMS-mini v0.1.0\n***********************CART***********************\n1. The Lion King - Animation - 19.95 $\n2. Star Wars - Science Fiction - 24.95 $\n3. Aladdin - Animation - 18.99 $\nTotal cost: 63.89 $\n***************************************************\nSearch 'lion': The Lion King\n"
+      },
+      "v1.0.0": {
+        "version": "1.0.0",
+        "lion": 1,
+        "unicode": 0,
+        "reverse_sort": false,
+        "commit": "54234c5a8f91e7abb5ed3c4b3e53a7eac5452942",
+        "tag_type": "tag",
+        "tests": 12,
+        "test_output": "test_add_dvd_until_full (test_cart.CartTests.test_add_dvd_until_full) ... ok\ntest_empty_cart_output (test_cart.CartTests.test_empty_cart_output) ... ok\ntest_reject_non_dvd (test_cart.CartTests.test_reject_non_dvd) ... ok\ntest_total_and_remove (test_cart.CartTests.test_total_and_remove) ... ok\ntest_boundary_discounts (test_discount.DiscountTests.test_boundary_discounts) ... ok\ntest_fractional_discount (test_discount.DiscountTests.test_fractional_discount) ... ok\ntest_integer_discount (test_discount.DiscountTests.test_integer_discount) ... ok\ntest_invalid_discounts (test_discount.DiscountTests.test_invalid_discounts) ... ok\ntest_blank_keyword (test_search.SearchTests.test_blank_keyword) ... ok\ntest_case_and_padding (test_search.SearchTests.test_case_and_padding) ... ok\ntest_empty_and_missing_results (test_search.SearchTests.test_empty_and_missing_results) ... ok\ntest_input_not_modified (test_search.SearchTests.test_input_not_modified) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.001s\n\nOK\n",
+        "demo_output": "Đã thêm đĩa vào giỏ hàng\nĐã thêm đĩa vào giỏ hàng\nĐã thêm đĩa vào giỏ hàng\nAIMS-mini v1.0.0\n***********************CART***********************\n1. The Lion King - Animation - 19.95 $\n2. Star Wars - Science Fiction - 24.95 $\n3. Aladdin - Animation - 18.99 $\nTotal cost: 63.89 $\n***************************************************\nSearch 'lion': The Lion King\n"
+      },
+      "v1.0.1": {
+        "version": "1.0.1",
+        "lion": 1,
+        "unicode": 1,
+        "reverse_sort": false,
+        "commit": "1f80a9e35055caa5e7c1e1d4932f630b3d65afb8",
+        "tag_type": "tag",
+        "tests": 13,
+        "test_output": "test_add_dvd_until_full (test_cart.CartTests.test_add_dvd_until_full) ... ok\ntest_empty_cart_output (test_cart.CartTests.test_empty_cart_output) ... ok\ntest_reject_non_dvd (test_cart.CartTests.test_reject_non_dvd) ... ok\ntest_total_and_remove (test_cart.CartTests.test_total_and_remove) ... ok\ntest_boundary_discounts (test_discount.DiscountTests.test_boundary_discounts) ... ok\ntest_fractional_discount (test_discount.DiscountTests.test_fractional_discount) ... ok\ntest_integer_discount (test_discount.DiscountTests.test_integer_discount) ... ok\ntest_invalid_discounts (test_discount.DiscountTests.test_invalid_discounts) ... ok\ntest_blank_keyword (test_search.SearchTests.test_blank_keyword) ... ok\ntest_canonical_unicode_equivalence (test_search.SearchTests.test_canonical_unicode_equivalence) ... ok\ntest_case_and_padding (test_search.SearchTests.test_case_and_padding) ... ok\ntest_empty_and_missing_results (test_search.SearchTests.test_empty_and_missing_results) ... ok\ntest_input_not_modified (test_search.SearchTests.test_input_not_modified) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.004s\n\nOK\n",
+        "demo_output": "Đã thêm đĩa vào giỏ hàng\nĐã thêm đĩa vào giỏ hàng\nĐã thêm đĩa vào giỏ hàng\nAIMS-mini v1.0.1\n***********************CART***********************\n1. The Lion King - Animation - 19.95 $\n2. Star Wars - Science Fiction - 24.95 $\n3. Aladdin - Animation - 18.99 $\nTotal cost: 63.89 $\n***************************************************\nSearch 'lion': The Lion King\n"
+      },
+      "v1.1.0": {
+        "version": "1.1.0",
+        "lion": 1,
+        "unicode": 1,
+        "reverse_sort": true,
+        "commit": "9c6ee471348b386516f7cbe114f027b9759f032d",
+        "tag_type": "tag",
+        "tests": 20,
+        "test_output": "test_add_dvd_until_full (test_cart.CartTests.test_add_dvd_until_full) ... ok\ntest_empty_cart_output (test_cart.CartTests.test_empty_cart_output) ... ok\ntest_reject_non_dvd (test_cart.CartTests.test_reject_non_dvd) ... ok\ntest_total_and_remove (test_cart.CartTests.test_total_and_remove) ... ok\ntest_boundary_discounts (test_discount.DiscountTests.test_boundary_discounts) ... ok\ntest_fractional_discount (test_discount.DiscountTests.test_fractional_discount) ... ok\ntest_integer_discount (test_discount.DiscountTests.test_integer_discount) ... ok\ntest_invalid_discounts (test_discount.DiscountTests.test_invalid_discounts) ... ok\ntest_category_case_and_padding (test_search.CategorySearchTests.test_category_case_and_padding) ... ok\ntest_category_missing_and_blank (test_search.CategorySearchTests.test_category_missing_and_blank) ... ok\ntest_category_preserves_input (test_search.CategorySearchTests.test_category_preserves_input) ... ok\ntest_blank_keyword (test_search.SearchTests.test_blank_keyword) ... ok\ntest_canonical_unicode_equivalence (test_search.SearchTests.test_canonical_unicode_equivalence) ... ok\ntest_case_and_padding (test_search.SearchTests.test_case_and_padding) ... ok\ntest_empty_and_missing_results (test_search.SearchTests.test_empty_and_missing_results) ... ok\ntest_input_not_modified (test_search.SearchTests.test_input_not_modified) ... ok\ntest_cost_sort_and_ties (test_sort.SortTests.test_cost_sort_and_ties) ... ok\ntest_empty_sort (test_sort.SortTests.test_empty_sort) ... ok\ntest_helpers_preserve_input (test_sort.SortTests.test_helpers_preserve_input) ... ok\ntest_title_sort_both_directions (test_sort.SortTests.test_title_sort_both_directions) ... ok\n\n----------------------------------------------------------------------\nRan 20 tests in 0.004s\n\nOK\n",
+        "demo_output": "Đã thêm đĩa vào giỏ hàng\nĐã thêm đĩa vào giỏ hàng\nĐã thêm đĩa vào giỏ hàng\nAIMS-mini v1.1.0\n***********************CART***********************\n1. The Lion King - Animation - 19.95 $\n2. Star Wars - Science Fiction - 24.95 $\n3. Aladdin - Animation - 18.99 $\nTotal cost: 63.89 $\n***************************************************\nSearch 'lion': The Lion King\n"
+      },
+      "origin/master": {
+        "version": "1.1.0",
+        "lion": 1,
+        "unicode": 1,
+        "reverse_sort": true,
+        "commit": "0000a557eaf0bac571dd8fc24879d01812f49d79",
+        "tests": 20,
+        "test_output": "test_add_dvd_until_full (test_cart.CartTests.test_add_dvd_until_full) ... ok\ntest_empty_cart_output (test_cart.CartTests.test_empty_cart_output) ... ok\ntest_reject_non_dvd (test_cart.CartTests.test_reject_non_dvd) ... ok\ntest_total_and_remove (test_cart.CartTests.test_total_and_remove) ... ok\ntest_boundary_discounts (test_discount.DiscountTests.test_boundary_discounts) ... ok\ntest_fractional_discount (test_discount.DiscountTests.test_fractional_discount) ... ok\ntest_integer_discount (test_discount.DiscountTests.test_integer_discount) ... ok\ntest_invalid_discounts (test_discount.DiscountTests.test_invalid_discounts) ... ok\ntest_category_case_and_padding (test_search.CategorySearchTests.test_category_case_and_padding) ... ok\ntest_category_missing_and_blank (test_search.CategorySearchTests.test_category_missing_and_blank) ... ok\ntest_category_preserves_input (test_search.CategorySearchTests.test_category_preserves_input) ... ok\ntest_blank_keyword (test_search.SearchTests.test_blank_keyword) ... ok\ntest_canonical_unicode_equivalence (test_search.SearchTests.test_canonical_unicode_equivalence) ... ok\ntest_case_and_padding (test_search.SearchTests.test_case_and_padding) ... ok\ntest_empty_and_missing_results (test_search.SearchTests.test_empty_and_missing_results) ... ok\ntest_input_not_modified (test_search.SearchTests.test_input_not_modified) ... ok\ntest_cost_sort_and_ties (test_sort.SortTests.test_cost_sort_and_ties) ... ok\ntest_empty_sort (test_sort.SortTests.test_empty_sort) ... ok\ntest_helpers_preserve_input (test_sort.SortTests.test_helpers_preserve_input) ... ok\ntest_title_sort_both_directions (test_sort.SortTests.test_title_sort_both_directions) ... ok\n\n----------------------------------------------------------------------\nRan 20 tests in 0.004s\n\nOK\n",
+        "demo_output": "Đã thêm đĩa vào giỏ hàng\nĐã thêm đĩa vào giỏ hàng\nĐã thêm đĩa vào giỏ hàng\nAIMS-mini v1.1.0\n***********************CART***********************\n1. The Lion King - Animation - 19.95 $\n2. Star Wars - Science Fiction - 24.95 $\n3. Aladdin - Animation - 18.99 $\nTotal cost: 63.89 $\n***************************************************\nSearch 'lion': The Lion King\n"
+      }
+    },
+    "hotfix_files": [
+      "CHANGELOG.md",
+      "aims/__init__.py",
+      "aims/search.py",
+      "tests/test_search.py"
+    ],
+    "cherry_pick_commits": [
+      "be2a5070c32760a691ff983139326df91cb04348",
+      "a9aaef0cef86648be3185912b4243b9286900365"
+    ],
+    "issue_states": {
+      "cart": "closed",
+      "discount": "closed",
+      "unicode": "closed"
+    },
+    "cherry_master": "+ f2c2ee323a7d34a989a7204e9ec897b8636ac886 fix: normalize Unicode title search\n+ a61978944fd76b7498f70d52581ca4ff0bb41f87 chore: bump the maintenance line to 1.0.1\n",
+    "cherry_lab05": "+ f2c2ee323a7d34a989a7204e9ec897b8636ac886 fix: normalize Unicode title search\n+ a61978944fd76b7498f70d52581ca4ff0bb41f87 chore: bump the maintenance line to 1.0.1\n",
+    "tags_containing_fix": "v1.0.1\n",
+    "master_protection": {
+      "url": "https://api.github.com/repos/thanhungoc2552006-debug/it3180-202416352-aims/branches/master/protection",
+      "required_status_checks": {
+        "url": "https://api.github.com/repos/thanhungoc2552006-debug/it3180-202416352-aims/branches/master/protection/required_status_checks",
+        "strict": true,
+        "contexts": [
+          "test"
+        ],
+        "contexts_url": "https://api.github.com/repos/thanhungoc2552006-debug/it3180-202416352-aims/branches/master/protection/required_status_checks/contexts",
+        "checks": [
+          {
+            "context": "test",
+            "app_id": 15368
+          }
+        ]
+      },
+      "required_pull_request_reviews": {
+        "url": "https://api.github.com/repos/thanhungoc2552006-debug/it3180-202416352-aims/branches/master/protection/required_pull_request_reviews",
+        "dismiss_stale_reviews": true,
+        "require_code_owner_reviews": false,
+        "require_last_push_approval": false,
+        "required_approving_review_count": 0
+      },
+      "required_signatures": {
+        "url": "https://api.github.com/repos/thanhungoc2552006-debug/it3180-202416352-aims/branches/master/protection/required_signatures",
+        "enabled": false
+      },
+      "enforce_admins": {
+        "url": "https://api.github.com/repos/thanhungoc2552006-debug/it3180-202416352-aims/branches/master/protection/enforce_admins",
+        "enabled": true
+      },
+      "required_linear_history": {
+        "enabled": false
+      },
+      "allow_force_pushes": {
+        "enabled": false
+      },
+      "allow_deletions": {
+        "enabled": false
+      },
+      "block_creations": {
+        "enabled": false
+      },
+      "required_conversation_resolution": {
+        "enabled": false
+      },
+      "lock_branch": {
+        "enabled": false
+      },
+      "allow_fork_syncing": {
+        "enabled": false
+      }
+    },
+    "release04_protection": {
+      "url": "https://api.github.com/repos/thanhungoc2552006-debug/it3180-202416352-aims/branches/release/lab04/protection",
+      "required_pull_request_reviews": {
+        "url": "https://api.github.com/repos/thanhungoc2552006-debug/it3180-202416352-aims/branches/release/lab04/protection/required_pull_request_reviews",
+        "dismiss_stale_reviews": true,
+        "require_code_owner_reviews": false,
+        "require_last_push_approval": false,
+        "required_approving_review_count": 0
+      },
+      "required_signatures": {
+        "url": "https://api.github.com/repos/thanhungoc2552006-debug/it3180-202416352-aims/branches/release/lab04/protection/required_signatures",
+        "enabled": false
+      },
+      "enforce_admins": {
+        "url": "https://api.github.com/repos/thanhungoc2552006-debug/it3180-202416352-aims/branches/release/lab04/protection/enforce_admins",
+        "enabled": true
+      },
+      "required_linear_history": {
+        "enabled": false
+      },
+      "allow_force_pushes": {
+        "enabled": false
+      },
+      "allow_deletions": {
+        "enabled": false
+      },
+      "block_creations": {
+        "enabled": false
+      },
+      "required_conversation_resolution": {
+        "enabled": false
+      },
+      "lock_branch": {
+        "enabled": false
+      },
+      "allow_fork_syncing": {
+        "enabled": false
+      }
+    },
+    "release05_protection": {
+      "url": "https://api.github.com/repos/thanhungoc2552006-debug/it3180-202416352-aims/branches/release/lab05/protection",
+      "required_pull_request_reviews": {
+        "url": "https://api.github.com/repos/thanhungoc2552006-debug/it3180-202416352-aims/branches/release/lab05/protection/required_pull_request_reviews",
+        "dismiss_stale_reviews": true,
+        "require_code_owner_reviews": false,
+        "require_last_push_approval": false,
+        "required_approving_review_count": 0
+      },
+      "required_signatures": {
+        "url": "https://api.github.com/repos/thanhungoc2552006-debug/it3180-202416352-aims/branches/release/lab05/protection/required_signatures",
+        "enabled": false
+      },
+      "enforce_admins": {
+        "url": "https://api.github.com/repos/thanhungoc2552006-debug/it3180-202416352-aims/branches/release/lab05/protection/enforce_admins",
+        "enabled": true
+      },
+      "required_linear_history": {
+        "enabled": false
+      },
+      "allow_force_pushes": {
+        "enabled": false
+      },
+      "allow_deletions": {
+        "enabled": false
+      },
+      "block_creations": {
+        "enabled": false
+      },
+      "required_conversation_resolution": {
+        "enabled": false
+      },
+      "lock_branch": {
+        "enabled": false
+      },
+      "allow_fork_syncing": {
+        "enabled": false
+      }
+    }
+  },
+  "prs": {
+    "cart": {
+      "number": 13,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/pull/13",
+      "head": "bugfix/cart-limit-off-by-one",
+      "base": "master",
+      "source_sha": "d850a1adc9e07965db35ea55fa64cb6f0c79271a",
+      "merged": true,
+      "merge_sha": "66301a38b674af1ef351202d48f9576bf356014b",
+      "method": "merge"
+    },
+    "discount_bug": {
+      "number": 15,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/pull/15",
+      "head": "bugfix/discount-calculation",
+      "base": "feature/discount",
+      "source_sha": "43debe314db111f1da1726fabdcc5c837543030b",
+      "merged": true,
+      "merge_sha": "0345740368f5a0247d3568b64e0ebe646c0e0873",
+      "method": "merge"
+    },
+    "discount_feature": {
+      "number": 16,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/pull/16",
+      "head": "feature/discount",
+      "base": "master",
+      "source_sha": "653267e28dc6905732251471b3001951c1f97cc8",
+      "merged": true,
+      "merge_sha": "cfd3402d53033789e50d2833103f9525c21d7326",
+      "method": "merge"
+    },
+    "vietnamese": {
+      "number": 17,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/pull/17",
+      "head": "feature/vietnamese-messages",
+      "base": "master",
+      "source_sha": "689bc745807e138254531f1491ec47ddc6bb2862",
+      "merged": true,
+      "merge_sha": "0c3e5e446f19dc22381ed4ed1dabbaed5ccdfdc8",
+      "method": "merge"
+    },
+    "show_title": {
+      "number": 18,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/pull/18",
+      "head": "feature/show-added-title",
+      "base": "master",
+      "source_sha": "4b2fffd125e871f84f1de646a36a8e5ed1776cc5",
+      "merged": true,
+      "merge_sha": "923f5d3e33c22d780e76d784034a34fd4fa90a61",
+      "method": "merge"
+    },
+    "revert": {
+      "number": 19,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/pull/19",
+      "head": "bugfix/revert-show-added-title",
+      "base": "master",
+      "source_sha": "52b05ddff17aeccb409ec63ca3c96177c398f0eb",
+      "merged": true,
+      "merge_sha": "99205d5c81d64a5fe792cb94597b00d5ccd88011",
+      "method": "merge"
+    },
+    "lab03_report": {
+      "number": 20,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/pull/20",
+      "head": "topic/lab03-report",
+      "base": "master",
+      "source_sha": "9cb12dd496a05e78f744da16e35bc9057bfe9cc7",
+      "merged": true,
+      "merge_sha": "c1a0a2c50523cbfa9b600ea2dd9af8fa78d6431e",
+      "method": "merge"
+    },
+    "prepare100": {
+      "number": 21,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/pull/21",
+      "head": "topic/prepare-release-1.0.0",
+      "base": "master",
+      "source_sha": "cd0e047d7fae202d70d2803f8f658234f5773d69",
+      "merged": true,
+      "merge_sha": "54234c5a8f91e7abb5ed3c4b3e53a7eac5452942",
+      "method": "merge"
+    },
+    "sort": {
+      "number": 22,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/pull/22",
+      "head": "feature/sort-cart",
+      "base": "master",
+      "source_sha": "243306405299e5b9d9fffbadfb53eaab7eb4cfb2",
+      "merged": true,
+      "merge_sha": "834a172c7b82b76b4607c82d40b62679f930de84",
+      "method": "merge"
+    },
+    "category": {
+      "number": 23,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/pull/23",
+      "head": "feature/search-by-category",
+      "base": "master",
+      "source_sha": "7a416955f85a405bd292328c2d1153a70d39e823",
+      "merged": true,
+      "merge_sha": "0419b745a20515c4e320dcc6ff8b11c4f6611a8d",
+      "method": "merge"
+    },
+    "prepare110": {
+      "number": 24,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/pull/24",
+      "head": "topic/prepare-release-1.1.0",
+      "base": "master",
+      "source_sha": "6b2800e5d08b14508a100b5e1ea5ea4ba9b0356b",
+      "merged": true,
+      "merge_sha": "5c9675016f2997bbe082cf1147bd94efc2cea731",
+      "method": "merge"
+    },
+    "hotfix": {
+      "number": 26,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/pull/26",
+      "head": "hotfix/search-unicode-normalization",
+      "base": "release/lab04",
+      "source_sha": "a61978944fd76b7498f70d52581ca4ff0bb41f87",
+      "merged": true,
+      "merge_sha": "1f80a9e35055caa5e7c1e1d4932f630b3d65afb8",
+      "method": "merge"
+    },
+    "port_master": {
+      "number": 27,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/pull/27",
+      "head": "hotfix/search-unicode-master",
+      "base": "master",
+      "source_sha": "98579cfabc950afdd55c8d1a1c1fe4ada8725eb5",
+      "merged": true,
+      "merge_sha": "098b01707fa1870a7202c794e86b86dc96576f74",
+      "method": "merge"
+    },
+    "port_lab05": {
+      "number": 28,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/pull/28",
+      "head": "hotfix/search-unicode-lab05",
+      "base": "release/lab05",
+      "source_sha": "d61314fc5a4e3b3831394d2b842498f975ec1041",
+      "merged": true,
+      "merge_sha": "9c6ee471348b386516f7cbe114f027b9759f032d",
+      "method": "merge"
+    },
+    "ci": {
+      "number": 29,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/pull/29",
+      "head": "topic/ci-unit-tests",
+      "base": "master",
+      "source_sha": "ba43f44e5d9585ac23030cab178644826a4422c6",
+      "merged": true,
+      "merge_sha": "0000a557eaf0bac571dd8fc24879d01812f49d79",
+      "method": "merge"
+    },
+    "ci_demo": {
+      "number": 30,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/pull/30",
+      "head": "bugfix/ci-demo",
+      "base": "master",
+      "source_sha": "c9900d36e8aab4dfb5a4012afac7bc1234095240",
+      "merged": false,
+      "closed": true,
+      "intentional_failure": true
+    }
+  },
+  "issues": {
+    "cart": {
+      "number": 12,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/issues/12"
+    },
+    "discount": {
+      "number": 14,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/issues/14"
+    },
+    "unicode": {
+      "number": 25,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/issues/25"
+    }
+  },
+  "fix_sha": "f2c2ee323a7d34a989a7204e9ec897b8636ac886",
+  "ci_success": {
+    "id": 42192605625,
+    "html_url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/actions/runs/42192605625",
+    "head_sha": "ba43f44e5d9585ac23030cab178644826a4422c6",
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "ci_failure_demo": {
+    "id": 42192690087,
+    "html_url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/actions/runs/42192690087",
+    "head_sha": "c9900d36e8aab4dfb5a4012afac7bc1234095240",
+    "status": "completed",
+    "conclusion": "failure"
+  },
+  "ci_blocked": {
+    "number": 30,
+    "mergeable_state": "blocked"
+  },
+  "action_pins": {
+    "checkout_v7.0.1": "3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "setup_python_v7.0.0": "5fda3b95a4ea91299a34e894583c3862153e4b97"
+  },
+  "release_push_rejected": "remote: error: GH006: Protected branch update failed for refs/heads/release/lab04.        \nremote: \nremote: - Changes must be made through a pull request.        \nTo github.com:thanhungoc2552006-debug/it3180-202416352-aims.git\n ! [remote rejected] HEAD -> release/lab04 (protected branch hook declined)\nerror: failed to push some refs to 'github.com:thanhungoc2552006-debug/it3180-202416352-aims.git'\n"
+}

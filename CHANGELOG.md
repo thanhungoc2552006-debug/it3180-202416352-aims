@@ -8,6 +8,9 @@
 - Case-insensitive exact category search with padded/blank input handling.
 - Optional reverse=True in cart sorting methods and copy-returning sort helpers.
 
+### Fixed
+- Includes the Unicode-equivalence search repair from the 1.0.1 maintenance line.
+
 ## [1.0.1] - 2026-11-06
 
 ### Fixed
