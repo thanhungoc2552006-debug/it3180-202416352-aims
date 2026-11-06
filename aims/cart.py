@@ -13,7 +13,7 @@ class Cart:
         """Add a DVD. Return False when the cart already contains 20 DVDs."""
         if not isinstance(dvd, DigitalVideoDisc):
             raise TypeError("dvd must be a DigitalVideoDisc")
-        if len(self.items) >= MAX_NUMBERS_ORDERED:
+        if len(self.items) > MAX_NUMBERS_ORDERED:
             return False
         self.items.append(dvd)
         return True
