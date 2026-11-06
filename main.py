@@ -1,7 +1,9 @@
 # Refactored for AIMS release flow
 
-from aims.aims import Cart, DigitalVideoDisc, __version__
-from aims.aims.search import search_by_title
+from aims.cart import Cart
+from aims.dvd import DigitalVideoDisc
+from aims import __version__
+from aims.search import search_by_title
 
 
 def build_demo_cart():
