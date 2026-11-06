@@ -39,3 +39,9 @@ main.py        Chương trình demo
 Tạo nhánh riêng cho mỗi mục đích, kiểm tra thay đổi rồi mở Pull Request vào
 `master`. Đồng bộ nhánh với `origin/master` trước khi tích hợp. Các nhánh
 `release/labXX` lưu bài nộp từng lab; không merge ngược nhánh release vào `master`.
+
+## Tài liệu Lab 02
+
+- [Use case và sơ đồ hành vi](docs/use-case.md)
+- [Câu trả lời thảo luận và bằng chứng thực hành](docs/answers-lab02.md)
+- Mốc bài nộp: nhánh `release/lab02`.
