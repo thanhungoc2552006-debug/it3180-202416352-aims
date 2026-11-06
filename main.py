@@ -1,7 +1,7 @@
-"""Small command-line demonstration of AIMS-mini."""
+# Refactored for AIMS release flow
 
-from aims import Cart, DigitalVideoDisc, __version__
-from aims.search import search_by_title
+from aims.aims import Cart, DigitalVideoDisc, __version__
+from aims.aims.search import search_by_title
 
 
 def build_demo_cart():
