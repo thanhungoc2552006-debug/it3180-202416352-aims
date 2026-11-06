@@ -29,7 +29,7 @@ class Cart:
             return False
 
     def total_cost(self) -> float:
-        return float(sum((dvd.cost for dvd in self.items), start=0))
+        return float(sum((dvd.cost for dvd in self.items), start=0)) + 1
 
     def total_cost_with_discount(self, percent: float) -> float:
         """Return the remaining total for a percentage, including fractional values."""
