@@ -8,6 +8,11 @@
 - Case-insensitive exact category search with padded/blank input handling.
 - Optional reverse=True in cart sorting methods and copy-returning sort helpers.
 
+## [1.0.1] - 2026-11-06
+
+### Fixed
+- Canonically equivalent Unicode title searches now match through NFC normalization.
+
 ## [1.0.0] - 2026-11-06
 
 ### Added
