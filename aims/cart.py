@@ -41,12 +41,12 @@ class Cart:
         total = sum((dvd.cost for dvd in self.items), start=Decimal(0))
         return float(total * (Decimal(100) - discount) / Decimal(100))
 
-    def sort_by_title(self):
-        self.items.sort(key=lambda dvd: dvd.title.casefold())
+    def sort_by_title(self, reverse=False):
+        self.items.sort(key=lambda dvd: dvd.title.casefold(), reverse=reverse)
         return list(self.items)
 
-    def sort_by_cost(self):
-        self.items.sort(key=lambda dvd: (dvd.cost, dvd.title.casefold()))
+    def sort_by_cost(self, reverse=False):
+        self.items.sort(key=lambda dvd: (dvd.cost, dvd.title.casefold()), reverse=reverse)
         return list(self.items)
 
     def print_cart(self) -> str:
@@ -64,11 +64,11 @@ class Cart:
         return output
 
 
-def sort_by_title(items):
+def sort_by_title(items, reverse=False):
     """Return a new list sorted by DVD title (case-insensitive)."""
-    return sorted(items, key=lambda dvd: dvd.title.casefold())
+    return sorted(items, key=lambda dvd: dvd.title.casefold(), reverse=reverse)
 
 
-def sort_by_cost(items):
+def sort_by_cost(items, reverse=False):
     """Return a new list sorted by cost, then title."""
-    return sorted(items, key=lambda dvd: (dvd.cost, dvd.title.casefold()))
+    return sorted(items, key=lambda dvd: (dvd.cost, dvd.title.casefold()), reverse=reverse)
