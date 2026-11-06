@@ -22,3 +22,26 @@ class SearchTests(unittest.TestCase):
         original = list(self.items)
         search_by_title(self.items, 'star')
         self.assertEqual(self.items, original)
+
+
+
+class CategorySearchTests(unittest.TestCase):
+    def test_category_case_and_padding(self):
+        from aims.search import search_by_category
+        items = [DigitalVideoDisc('A', 'Animation'), DigitalVideoDisc('B', 'Drama'),
+                 DigitalVideoDisc('C', 'Animation')]
+        self.assertEqual(search_by_category(items, '  ANIMATION  '), [items[0], items[2]])
+
+    def test_category_missing_and_blank(self):
+        from aims.search import search_by_category
+        items = [DigitalVideoDisc('A', 'Animation')]
+        for category in ('', '  ', 'missing'):
+            self.assertEqual(search_by_category(items, category), [])
+        self.assertEqual(search_by_category([], 'Animation'), [])
+
+    def test_category_preserves_input(self):
+        from aims.search import search_by_category
+        items = [DigitalVideoDisc('A', 'Animation'), DigitalVideoDisc('B', 'Drama')]
+        before = list(items)
+        search_by_category(items, 'Drama')
+        self.assertEqual(items, before)
