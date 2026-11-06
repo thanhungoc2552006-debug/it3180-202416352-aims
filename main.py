@@ -18,7 +18,7 @@ def build_demo_cart():
 def main():
     cart = build_demo_cart()
     print(f"AIMS-mini v{__version__}")
-    print(f"Total cost: {cart.total_cost():.2f} $")
+    cart.print_cart()
     matches = search_by_title(cart.items, "lion")
     print("Search 'lion': " + ", ".join(dvd.title for dvd in matches))
 
