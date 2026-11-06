@@ -53,3 +53,12 @@ Workflow CI chạy unittest cho PR vào master/release/** và push lên master.
 Job test phải thành công trước khi merge vào master. Bài thử CI cố ý làm sai
 tổng tiền chỉ nằm trên nhánh demo riêng, không merge mã lỗi vào bản phát hành.
 Các URL PR, SHA hotfix, kết quả kiểm toán và CI thực tế nằm trong báo cáo tổng hợp.
+
+
+## Kết quả kiểm toán thực tế
+
+Cherry-pick đã gặp và được giải quyết xung đột tại dòng chuẩn hóa tiêu đề.
+git cherry hiển thị '+' ở fix gốc vì patch trên bản cũ còn bổ sung newline cuối
+tệp, trong khi dòng mới đã có newline. Đây không phải bằng chứng đủ để kết luận
+thiếu bản sửa: hai commit vẫn có trailer -x, code đã được đối chiếu và test
+Unicode cùng tìm lion đều thành công trên v1.0.1, v1.1.0 và master.

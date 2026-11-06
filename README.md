@@ -45,3 +45,12 @@ Tạo nhánh riêng cho mỗi mục đích, kiểm tra thay đổi rồi mở Pu
 - [Use case và sơ đồ hành vi](docs/use-case.md)
 - [Câu trả lời thảo luận và bằng chứng thực hành](docs/answers-lab02.md)
 - Mốc bài nộp: nhánh `release/lab02`.
+
+
+## Báo cáo tổng hợp và các mốc còn lại
+
+- [Báo cáo Lab 03-05 và bằng chứng](docs/submission-report.md)
+- [Lab 03](docs/answers-lab03.md), [Lab 04](docs/answers-lab04.md), [Lab 05](docs/answers-lab05.md)
+- Bài nộp: release/lab03, release/lab04, release/lab05.
+- Phát hành: v1.0.0, v1.0.1 (hotfix), v1.1.0.
+- Kiểm thử: `python -m unittest discover -s tests -v` (20 tests).
