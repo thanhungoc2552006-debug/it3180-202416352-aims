@@ -41,6 +41,13 @@ nghĩa là đã có patch tương đương dù SHA khác. Dấu '+' ở commit n
 đúng chủ đích, vì không chuyển số bản cũ sang dòng mới. tag --contains kiểm tra
 quan hệ tổ tiên, không nhận diện hai patch tương đương có SHA khác.
 
+Trong lần thực hành này, cherry-pick sang dòng mới có xung đột tại dòng chuẩn
+hóa tiêu đề. Đã giải quyết và giữ chức năng tìm theo thể loại. `git cherry`
+vẫn có thể hiển thị '+' cho bản sửa gốc: patch trên bản cũ còn bổ sung newline
+cuối tệp, trong khi dòng mới đã có newline từ trước. Vì patch không hoàn toàn
+giống nhau, phải đối chiếu trailer `cherry picked from commit`, mã nguồn và test
+hành vi; không kết luận đã quên bản sửa chỉ từ dấu '+' trong trường hợp này.
+
 ## Khi nào gắn tag 1.1.0?
 
 Tạo release/lab05 từ trạng thái chuẩn bị 1.1.0, chưa gắn tag. Sau khi chuyển
