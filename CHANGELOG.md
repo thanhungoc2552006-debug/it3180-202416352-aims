@@ -2,6 +2,9 @@
 
 ## [Unreleased]
 
+### Added
+- Optional reverse=True in cart sorting methods and copy-returning sort helpers.
+
 ## [1.0.0] - 2026-11-06
 
 ### Added
