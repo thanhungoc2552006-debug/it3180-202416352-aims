@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-11-06
+
 ### Added
 - Case-insensitive exact category search with padded/blank input handling.
 - Optional reverse=True in cart sorting methods and copy-returning sort helpers.
