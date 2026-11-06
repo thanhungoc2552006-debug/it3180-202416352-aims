@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-11-06
+
+### Fixed
+- Canonically equivalent Unicode title searches now match through NFC normalization.
+
 ## [1.0.0] - 2026-11-06
 
 ### Added
