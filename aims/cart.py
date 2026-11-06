@@ -1,5 +1,7 @@
 """Shopping cart operations for AIMS-mini."""
 
+from decimal import Decimal
+
 from .dvd import DigitalVideoDisc
 
 MAX_NUMBERS_ORDERED = 20
@@ -29,10 +31,14 @@ class Cart:
         return float(sum((dvd.cost for dvd in self.items), start=0))
 
     def total_cost_with_discount(self, percent: float) -> float:
-        if not isinstance(percent, (int, float)) or not 0 <= percent <= 100:
-            raise ValueError("percent must be between 0 and 100")
-        total = sum((dvd.cost for dvd in self.items), start=0)
-        return float(total * (100 - percent) / 100)
+        """Return the remaining total for a percentage, including fractional values."""
+        if isinstance(percent, bool) or not isinstance(percent, (int, float, Decimal)):
+            raise ValueError("percent must be a finite number between 0 and 100")
+        discount = Decimal(str(percent))
+        if not discount.is_finite() or not 0 <= discount <= 100:
+            raise ValueError("percent must be a finite number between 0 and 100")
+        total = sum((dvd.cost for dvd in self.items), start=Decimal(0))
+        return float(total * (Decimal(100) - discount) / Decimal(100))
 
     def sort_by_title(self):
         self.items.sort(key=lambda dvd: dvd.title.casefold())
