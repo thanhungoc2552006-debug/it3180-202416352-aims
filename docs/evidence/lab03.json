@@ -1,0 +1,131 @@
+{
+  "prs": {
+    "cart": {
+      "number": 13,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/pull/13",
+      "head": "bugfix/cart-limit-off-by-one",
+      "base": "master",
+      "source_sha": "d850a1adc9e07965db35ea55fa64cb6f0c79271a",
+      "merged": true,
+      "merge_sha": "66301a38b674af1ef351202d48f9576bf356014b",
+      "method": "merge"
+    },
+    "discount_bug": {
+      "number": 15,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/pull/15",
+      "head": "bugfix/discount-calculation",
+      "base": "feature/discount",
+      "source_sha": "43debe314db111f1da1726fabdcc5c837543030b",
+      "merged": true,
+      "merge_sha": "0345740368f5a0247d3568b64e0ebe646c0e0873",
+      "method": "merge"
+    },
+    "discount_feature": {
+      "number": 16,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/pull/16",
+      "head": "feature/discount",
+      "base": "master",
+      "source_sha": "653267e28dc6905732251471b3001951c1f97cc8",
+      "merged": true,
+      "merge_sha": "cfd3402d53033789e50d2833103f9525c21d7326",
+      "method": "merge"
+    },
+    "vietnamese": {
+      "number": 17,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/pull/17",
+      "head": "feature/vietnamese-messages",
+      "base": "master",
+      "source_sha": "689bc745807e138254531f1491ec47ddc6bb2862",
+      "merged": true,
+      "merge_sha": "0c3e5e446f19dc22381ed4ed1dabbaed5ccdfdc8",
+      "method": "merge"
+    },
+    "show_title": {
+      "number": 18,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/pull/18",
+      "head": "feature/show-added-title",
+      "base": "master",
+      "source_sha": "4b2fffd125e871f84f1de646a36a8e5ed1776cc5",
+      "merged": true,
+      "merge_sha": "923f5d3e33c22d780e76d784034a34fd4fa90a61",
+      "method": "merge"
+    },
+    "revert": {
+      "number": 19,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/pull/19",
+      "head": "bugfix/revert-show-added-title",
+      "base": "master",
+      "source_sha": "52b05ddff17aeccb409ec63ca3c96177c398f0eb",
+      "merged": true,
+      "merge_sha": "99205d5c81d64a5fe792cb94597b00d5ccd88011",
+      "method": "merge"
+    }
+  },
+  "issues": {
+    "cart": {
+      "number": 12,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/issues/12"
+    },
+    "discount": {
+      "number": 14,
+      "url": "https://github.com/thanhungoc2552006-debug/it3180-202416352-aims/issues/14"
+    }
+  },
+  "cart_test_sha": "d367890e77c20c947769985450c3c274c185b737",
+  "cart_fail": {
+    "expected_failure": true,
+    "output": "test_add_dvd_until_full (test_cart.CartTests.test_add_dvd_until_full) ... FAIL\ntest_empty_cart_output (test_cart.CartTests.test_empty_cart_output) ... ok\ntest_reject_non_dvd (test_cart.CartTests.test_reject_non_dvd) ... ok\ntest_total_and_remove (test_cart.CartTests.test_total_and_remove) ... ok\n\n======================================================================\nFAIL: test_add_dvd_until_full (test_cart.CartTests.test_add_dvd_until_full)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\FPT\\it3180\\aims\\tests\\test_cart.py\", line 15, in test_add_dvd_until_full\n    self.assertFalse(cart.add_dvd(DigitalVideoDisc('overflow', cost=1)))\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: True is not false\n\n----------------------------------------------------------------------\nRan 4 tests in 0.005s\n\nFAILED (failures=1)\n",
+    "commit": "d367890e77c20c947769985450c3c274c185b737"
+  },
+  "cart_fix_sha": "d850a1adc9e07965db35ea55fa64cb6f0c79271a",
+  "cart_pass": {
+    "expected_failure": false,
+    "output": "test_add_dvd_until_full (test_cart.CartTests.test_add_dvd_until_full) ... ok\ntest_empty_cart_output (test_cart.CartTests.test_empty_cart_output) ... ok\ntest_reject_non_dvd (test_cart.CartTests.test_reject_non_dvd) ... ok\ntest_total_and_remove (test_cart.CartTests.test_total_and_remove) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.001s\n\nOK\n",
+    "commit": "d850a1adc9e07965db35ea55fa64cb6f0c79271a"
+  },
+  "discount_test_sha": "ac0c94747065e10a22056a433fbd4e9ef2a2f4a5",
+  "discount_fail": {
+    "expected_failure": true,
+    "output": "test_add_dvd_until_full (test_cart.CartTests.test_add_dvd_until_full) ... ok\ntest_empty_cart_output (test_cart.CartTests.test_empty_cart_output) ... ok\ntest_reject_non_dvd (test_cart.CartTests.test_reject_non_dvd) ... ok\ntest_total_and_remove (test_cart.CartTests.test_total_and_remove) ... ok\ntest_boundary_discounts (test_discount.DiscountTests.test_boundary_discounts) ... ok\ntest_fractional_discount (test_discount.DiscountTests.test_fractional_discount) ... ERROR\ntest_integer_discount (test_discount.DiscountTests.test_integer_discount) ... ok\ntest_invalid_discounts (test_discount.DiscountTests.test_invalid_discounts) ... \n  test_invalid_discounts (test_discount.DiscountTests.test_invalid_discounts) (percent=True) ... FAIL\n\n======================================================================\nERROR: test_fractional_discount (test_discount.DiscountTests.test_fractional_discount)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\FPT\\it3180\\aims\\tests\\test_discount.py\", line 20, in test_fractional_discount\n    self.assertEqual(self.cart.total_cost_with_discount(20.5), 79.5)\n                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^\n  File \"C:\\Users\\FPT\\it3180\\aims\\aims\\cart.py\", line 36, in total_cost_with_discount\n    return float(total * (100 - percent) / 100)\n                 ~~~~~~^~~~~~~~~~~~~~~~~\nTypeError: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'\n\n======================================================================\nFAIL: test_invalid_discounts (test_discount.DiscountTests.test_invalid_discounts) (percent=True)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"C:\\Users\\FPT\\it3180\\aims\\tests\\test_discount.py\", line 29, in test_invalid_discounts\n    with self.subTest(percent=percent), self.assertRaises(ValueError):\n                                        ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n----------------------------------------------------------------------\nRan 8 tests in 0.009s\n\nFAILED (failures=1, errors=1)\n",
+    "commit": "ac0c94747065e10a22056a433fbd4e9ef2a2f4a5"
+  },
+  "discount_fix_sha": "43debe314db111f1da1726fabdcc5c837543030b",
+  "discount_pass": {
+    "expected_failure": false,
+    "output": "test_add_dvd_until_full (test_cart.CartTests.test_add_dvd_until_full) ... ok\ntest_empty_cart_output (test_cart.CartTests.test_empty_cart_output) ... ok\ntest_reject_non_dvd (test_cart.CartTests.test_reject_non_dvd) ... ok\ntest_total_and_remove (test_cart.CartTests.test_total_and_remove) ... ok\ntest_boundary_discounts (test_discount.DiscountTests.test_boundary_discounts) ... ok\ntest_fractional_discount (test_discount.DiscountTests.test_fractional_discount) ... ok\ntest_integer_discount (test_discount.DiscountTests.test_integer_discount) ... ok\ntest_invalid_discounts (test_discount.DiscountTests.test_invalid_discounts) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.001s\n\nOK\n",
+    "commit": "43debe314db111f1da1726fabdcc5c837543030b"
+  },
+  "discount_integrated": {
+    "expected_failure": false,
+    "output": "test_add_dvd_until_full (test_cart.CartTests.test_add_dvd_until_full) ... ok\ntest_empty_cart_output (test_cart.CartTests.test_empty_cart_output) ... ok\ntest_reject_non_dvd (test_cart.CartTests.test_reject_non_dvd) ... ok\ntest_total_and_remove (test_cart.CartTests.test_total_and_remove) ... ok\ntest_boundary_discounts (test_discount.DiscountTests.test_boundary_discounts) ... ok\ntest_fractional_discount (test_discount.DiscountTests.test_fractional_discount) ... ok\ntest_integer_discount (test_discount.DiscountTests.test_integer_discount) ... ok\ntest_invalid_discounts (test_discount.DiscountTests.test_invalid_discounts) ... ok\ntest_blank_keyword (test_search.SearchTests.test_blank_keyword) ... ok\ntest_case_and_padding (test_search.SearchTests.test_case_and_padding) ... ok\ntest_empty_and_missing_results (test_search.SearchTests.test_empty_and_missing_results) ... ok\ntest_input_not_modified (test_search.SearchTests.test_input_not_modified) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.001s\n\nOK\n",
+    "commit": "653267e28dc6905732251471b3001951c1f97cc8"
+  },
+  "conflict_base": "cfd3402d53033789e50d2833103f9525c21d7326",
+  "vietnamese_pass": {
+    "expected_failure": false,
+    "output": "test_add_dvd_until_full (test_cart.CartTests.test_add_dvd_until_full) ... ok\ntest_empty_cart_output (test_cart.CartTests.test_empty_cart_output) ... ok\ntest_reject_non_dvd (test_cart.CartTests.test_reject_non_dvd) ... ok\ntest_total_and_remove (test_cart.CartTests.test_total_and_remove) ... ok\ntest_boundary_discounts (test_discount.DiscountTests.test_boundary_discounts) ... ok\ntest_fractional_discount (test_discount.DiscountTests.test_fractional_discount) ... ok\ntest_integer_discount (test_discount.DiscountTests.test_integer_discount) ... ok\ntest_invalid_discounts (test_discount.DiscountTests.test_invalid_discounts) ... ok\ntest_blank_keyword (test_search.SearchTests.test_blank_keyword) ... ok\ntest_case_and_padding (test_search.SearchTests.test_case_and_padding) ... ok\ntest_empty_and_missing_results (test_search.SearchTests.test_empty_and_missing_results) ... ok\ntest_input_not_modified (test_search.SearchTests.test_input_not_modified) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.003s\n\nOK\n",
+    "commit": "689bc745807e138254531f1491ec47ddc6bb2862"
+  },
+  "merge_base": "cfd3402d53033789e50d2833103f9525c21d7326",
+  "conflict_text": "\"\"\"Shopping cart operations for AIMS-mini.\"\"\"\n\nfrom decimal import Decimal\n\nfrom .dvd import DigitalVideoDisc\n\nMAX_NUMBERS_ORDERED = 20\n\n\nclass Cart:\n    def __init__(self):\n        self.items = []\n\n    def add_dvd(self, dvd: DigitalVideoDisc) -> bool:\n        \"\"\"Add a DVD. Return False when the cart already contains 20 DVDs.\"\"\"\n        if not isinstance(dvd, DigitalVideoDisc):\n            raise TypeError(\"dvd must be a DigitalVideoDisc\")\n        if len(self.items) >= MAX_NUMBERS_ORDERED:\n            return False\n        self.items.append(dvd)\n<<<<<<< HEAD\n        print(f\"The disc '{dvd.title}' has been added\")\n=======\n        print(\"Đã thêm đĩa vào giỏ hàng\")\n>>>>>>> origin/master\n        return True\n\n    def remove_dvd(self, dvd: DigitalVideoDisc) -> bool:\n        try:\n            self.items.remove(dvd)\n            return True\n        except ValueError:\n            return False\n\n    def total_cost(self) -> float:\n        return float(sum((dvd.cost for dvd in self.items), start=0))\n\n    def total_cost_with_discount(self, percent: float) -> float:\n        \"\"\"Return the remaining total for a percentage, including fractional values.\"\"\"\n        if isinstance(percent, bool) or not isinstance(percent, (int, float, Decimal)):\n            raise ValueError(\"percent must be a finite number between 0 and 100\")\n        discount = Decimal(str(percent))\n        if not discount.is_finite() or not 0 <= discount <= 100:\n            raise ValueError(\"percent must be a finite number between 0 and 100\")\n        total = sum((dvd.cost for dvd in self.items), start=Decimal(0))\n        return float(total * (Decimal(100) - discount) / Decimal(100))\n\n    def sort_by_title(self):\n        self.items.sort(key=lambda dvd: dvd.title.casefold())\n        return list(self.items)\n\n    def sort_by_cost(self):\n        self.items.sort(key=lambda dvd: (dvd.cost, dvd.title.casefold()))\n        return list(self.items)\n\n    def print_cart(self) -> str:\n        if not self.items:\n            output = \"The cart is empty\"\n        else:\n            lines = [\"***********************CART***********************\"]\n            lines.extend(\n            f\"{index}. {dvd.title} - {dvd.category} - {dvd.cost:.2f} $\"\n            for index, dvd in enumerate(self.items, start=1))\n            lines.append(f\"Total cost: {self.total_cost():.2f} $\")\n            lines.append(\"***************************************************\")\n            output = \"\\n\".join(lines)\n        print(output)\n        return output\n\n\ndef sort_by_title(items):\n    \"\"\"Return a new list sorted by DVD title (case-insensitive).\"\"\"\n    return sorted(items, key=lambda dvd: dvd.title.casefold())\n\n\ndef sort_by_cost(items):\n    \"\"\"Return a new list sorted by cost, then title.\"\"\"\n    return sorted(items, key=lambda dvd: (dvd.cost, dvd.title.casefold()))\n",
+  "conflict_pass": {
+    "expected_failure": false,
+    "output": "test_add_dvd_until_full (test_cart.CartTests.test_add_dvd_until_full) ... ok\ntest_empty_cart_output (test_cart.CartTests.test_empty_cart_output) ... ok\ntest_reject_non_dvd (test_cart.CartTests.test_reject_non_dvd) ... ok\ntest_total_and_remove (test_cart.CartTests.test_total_and_remove) ... ok\ntest_boundary_discounts (test_discount.DiscountTests.test_boundary_discounts) ... ok\ntest_fractional_discount (test_discount.DiscountTests.test_fractional_discount) ... ok\ntest_integer_discount (test_discount.DiscountTests.test_integer_discount) ... ok\ntest_invalid_discounts (test_discount.DiscountTests.test_invalid_discounts) ... ok\ntest_blank_keyword (test_search.SearchTests.test_blank_keyword) ... ok\ntest_case_and_padding (test_search.SearchTests.test_case_and_padding) ... ok\ntest_empty_and_missing_results (test_search.SearchTests.test_empty_and_missing_results) ... ok\ntest_input_not_modified (test_search.SearchTests.test_input_not_modified) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.001s\n\nOK\n",
+    "commit": "4b2fffd125e871f84f1de646a36a8e5ed1776cc5"
+  },
+  "conflict_resolution_sha": "567e80c895bf21d37ad8eb0780a254f5e102538d",
+  "revert_sha": "52b05ddff17aeccb409ec63ca3c96177c398f0eb",
+  "revert_pass": {
+    "expected_failure": false,
+    "output": "test_add_dvd_until_full (test_cart.CartTests.test_add_dvd_until_full) ... ok\ntest_empty_cart_output (test_cart.CartTests.test_empty_cart_output) ... ok\ntest_reject_non_dvd (test_cart.CartTests.test_reject_non_dvd) ... ok\ntest_total_and_remove (test_cart.CartTests.test_total_and_remove) ... ok\ntest_boundary_discounts (test_discount.DiscountTests.test_boundary_discounts) ... ok\ntest_fractional_discount (test_discount.DiscountTests.test_fractional_discount) ... ok\ntest_integer_discount (test_discount.DiscountTests.test_integer_discount) ... ok\ntest_invalid_discounts (test_discount.DiscountTests.test_invalid_discounts) ... ok\ntest_blank_keyword (test_search.SearchTests.test_blank_keyword) ... ok\ntest_case_and_padding (test_search.SearchTests.test_case_and_padding) ... ok\ntest_empty_and_missing_results (test_search.SearchTests.test_empty_and_missing_results) ... ok\ntest_input_not_modified (test_search.SearchTests.test_input_not_modified) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.001s\n\nOK\n",
+    "commit": "52b05ddff17aeccb409ec63ca3c96177c398f0eb"
+  },
+  "undo": {
+    "soft_status": "A  undo-example.txt\n",
+    "mixed_status": "?? undo-example.txt\n",
+    "hard_status": "clean",
+    "recovered_commit": "80809f0f43c90038a4732bbc7494cf6964ea471f",
+    "reflog": "99205d5 HEAD@{0}: reset: moving to HEAD~1\n80809f0 HEAD@{1}: commit: docs: prepare disposable hard-reset example\n99205d5 HEAD@{2}: reset: moving to HEAD~1\nbdf678d HEAD@{3}: commit: docs: stage disposable undo exercise\n99205d5 HEAD@{4}: reset: moving to HEAD~1\n2f686fc HEAD@{5}: commit: docs: add disposable undo exercise\n",
+    "note": "Only a disposable worktree was reset; no shared commit was rewritten."
+  }
+}
