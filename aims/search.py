@@ -9,12 +9,14 @@ def search_by_category(items, category):
 
 
 def search_by_title(items, keyword):
-    normalized_keyword = keyword.strip().casefold()
+    from unicodedata import normalize
+
+    normalized_keyword = normalize("NFC", keyword.strip()).casefold()
 
     if not normalized_keyword:
         return []
 
     return [
         dvd for dvd in items
-        if normalized_keyword in dvd.title.casefold()
+        if normalized_keyword in normalize("NFC", dvd.title).casefold()
     ]
